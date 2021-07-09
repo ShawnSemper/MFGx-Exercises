@@ -1,6 +1,9 @@
 // Implement the body of the function below & ensure it passes the provided unit tests by running npm run test.
 const sum = (arrayOfNumbers) => {
-  throw new Error('Not Implemented.');
+  var result = arrayOfNumbers.reduce(function(a, b){
+    return a + b;
+}, 0);
+  return result;
 };
 
 module.exports = {
